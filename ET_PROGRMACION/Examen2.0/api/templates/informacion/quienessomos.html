@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+    <div class="col-md-12 p-3">
+        <h1 class="text-center text-uppercase">¿Quienes somos?</h1>
+    </div>
+    <hr>
+    <div class="row p-1">
+        <div class="col-md-6 p-2">
+            <h2 class="text-center">Nuestra historia</h2>
+            <hr>
+            <p align="center">Pet Tools nace el año 2014, en la ciudad de Santiago de Chile. Abrimos nuestra tienda y venta online con las ganas y la ilusión de convertirnos en un actor relevante en las vidas de las mascotas y de sus dueños y dueñas. 
+
+                Llevamos 7 años ya, creciendo y aprendiendo cada día con nuestros clientes, entendiendo la historia y necesidades particulares de cada mascota.  Este tiempo nos ha permitido reafirmar nuestro compromiso con los hogares del país y seguiremos trabajando para cuidar y apoyar a nuestras mascotas, quienes hoy son parte fundamental de las familias chilenas. </h2>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'img/quienes-somos/perro.png' %}" width="400px">
+        </div>
+    </div>
+    <hr>
+    <div class="row p-3">
+        <div class="col-md-6">
+            <img src="{% static 'img/quienes-somos/gato.png' %}" width="400px">
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-center">Nuestra pasión</h2>
+            <hr>
+            <p align="center">En Pet Tools nos mueve nuestra pasión por todas las mascotas.  Ellas nos inspiran y trabajamos cada día para entregarles bienestar y salud, a través de una amplia selección de alimentos y suplementos, accesorios, juguetes y productos para su higiene, belleza y cuidado. 
+
+                Entendemos y valoramos el rol clave que tienen las mascotas en nuestros hogares y nos esforzamos para que nuestra tienda sea más que sólo una tienda, sino que un punto de encuentro físico y online para los amantes y dueños responsables de mascotas. </p>
+        </div>
+        
+    </div>
+    <hr>
+    <div class="row p-3">
+        <div class="col-md-6 p-2">
+            <h2 class="text-center">Nuestro trabajo</h2>
+            <hr>
+            <p align="center">A través de nuestro trabajo, asesoría y recomendaciones queremos marcar una diferencia en la vida de las mascotas y de sus familias. 
+
+                Es por eso que nos preocupamos de brindar una experiencia de compra única a través de colaboradores capacitados y entrenados, a través del uso de la tecnología y las comunicaciones en las diferentes plataformas sociales y ofreciendo un amplio y variado portafolio de marcas de la más alta calidad que provienen de distintas partes del mundo. 
+                
+                Por último, hemos desarrollado un sistema de reparto confiable y rápido que se extiende a lo largo del país, garantizando un servicio de excelencia para que sigas satisfaciendo las necesidades de tu peludo (o no tan peludo!) en Pet Tools. </p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'img/quienes-somos/perro2.png' %}" width="400px">
+        </div>
+    </div>
+    <hr>
+    <div class="row p-4">
+        <h2 class="text-center">"Día a día acompañándote en el cuidado, desarrollo y crecimiento de tu mascota"</h2>
+    </div>
+{% endblock %}

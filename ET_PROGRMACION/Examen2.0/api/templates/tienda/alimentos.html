@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+
+{%block contenido %}
+{% load static %} 
+
+<div class="container">
+    <div class="col-md-12">
+        <div class="card-deck">
+            {% for p in productos %}
+            <div class="card mt-3 mb-3" style="width: 18rem;">
+              <img width="100px" height="200" src="{{p.img_producto.url}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">{{p.nombre_producto}}</h5>
+              </div>
+              <div>
+                <p class="card-text text-center">{{p.marca_producto}}</p>
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center">${{p.precio_producto}} CLP</p>
+              </div>
+              <div class="card-footer col-auto">
+                <a href="#" class="btn text-center btn-dark">Añadir a Carrito</a>
+              </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{%endblock%}

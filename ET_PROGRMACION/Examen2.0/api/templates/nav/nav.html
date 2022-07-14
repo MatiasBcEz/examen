@@ -1,0 +1,158 @@
+{% load static %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 navbar sticky-top navbar-expand-lg navbar-light color_corp justify-content-center">
+      <img src="{% static 'img/icons/logo.png' %}" alt="img" width="50 px" class="mr-2"><a class="navbar-brand"><h1>PET TOOLS</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <nav class="col-md-12 navbar navbar-expand-lg navbar-light color_corp">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link ml-4" href="{%url 'home'%}">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              ACCESORIOS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{% url 'alimentos' %}">ALIMENTOS</a>
+              <a class="dropdown-item" href="#">CORREAS</a>
+              <a class="dropdown-item" href="#">IDENTIFICADORES</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">OTROS</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'donacion' %}">DONACIONES</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'contacto' %}">CONTACTO</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-5 mr-4">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#login" href=""> LOGIN <img src="{% static 'img/icons/icon_login.PNG' %}" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#carrito" href=""> CARRITO <img src="{% static 'img/icons/icon_carrito.PNG' %}" alt=""></a> 
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- MODAL CARRITO -->
+
+<div class="modal fade" id="carrito" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100">Carrito de Compra</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <form id="formcarrito">
+          <div class="md-form mb-3">         
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL LOGIN -->
+
+<div class="modal fade" id="login" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100">Iniciar Sesión</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <form id="formLogin">
+          <div class="md-form mb-3">
+            <label >Ingrese su email</label>
+            <input type="email" id="emailLogin" class="form-control">
+          </div>
+  
+          <div class="md-form mb-3">
+            <label >Ingrese su contraseña</label>
+            <input type="password" id="passLogin" class="form-control">
+          </div>
+
+          <div class="md-form mb-3">
+            <a class="" href="#">¿Olvidaste tu contraseña?</a>
+            <a class="" href="#" data-toggle="modal" data-target="#register">¿Eres nuevo? Registrate</a>
+          </div>
+          
+
+          <div class="col-md-12">
+            <div id="errorLogin" class="alert alert-danger">
+            </div>
+          </div>
+    
+          <div class="modal-footer d-flex justify-content-center">
+
+            <button class="btn btn-danger" >Login</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL REGISTER -->
+
+<div class="modal fade" id="register" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100">Registrate!</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <form id="formRegister">
+          <div class="md-form mb-3">
+            <label >Ingrese su email</label>
+            <input type="email" id="emailRegister" class="form-control">
+          </div>
+  
+          <div class="md-form mb-3">
+            <label >Ingrese su nombre de usuario</label>
+            <input type="text" id="nameRegister" class="form-control">
+          </div>
+
+          <div class="md-form mb-3">
+            <label >Ingrese su contraseña</label>
+            <input type="password" id="passRegister" class="form-control">
+          </div>
+
+          <div class="md-form mx-4 mb-4">
+            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+            <label class="form-check-label" for="dropdownCheck">Acepto los términos y condiciones.</label> <a class="" href="#">Leer términos y condiciones</a>
+          </div>       
+
+          <div class="col-md-12 mb-5">
+            <div id="errorRegister" class="alert alert-danger">
+            </div>
+          </div>
+    
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-danger">Registrarse</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

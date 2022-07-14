@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="container-fluid p-3">
+    <h1 class="text-center text-uppercase">Gatos</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <h2>Caracteristicas del gato</h2>
+            <img src="{% static 'img/gatos/gato-caracteristicas.jpg' %}" alt="Caracteristicas del gato" width="100%">
+            <p>El gato es un felino carnívoro y mamífero cuadrúpedo, que ha convivido con los seres humanos desde hace unos 9500 años, ocupando en la cultura temprana de las sociedades antiguas un lugar prominente.</p>
+            <p>El gato doméstico está emparentado con los grandes felinos africanos, se estima que su pariente más cercano sean los gatos salvajes del Medio Oriente. El primer caso registrado de domesticación de un gato se presume en la isla de Chipre, en la antigüedad.</p>
+            <p>Los gatos nacen en camadas de 1 a 10 crías, después de un período de gestación de unos dos meses, y las crías recién nacidas acompañarán a la madre durante un período de 30 días como mínimo.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <h2>Comportamiento del gato</h2>
+            <img src="{% static 'img/gatos/gato-domesticacion.jpg' %}" alt="Comportamiento del gato" width="100%">
+            <p>Los gatos son cazadores natos y son poco dados a la constitución de comunidades. Poseen un fuerte instinto territorial y son altamente independientes, esto último los hace populares como animal de compañía. Un contraste marcado con su variante salvaje, cuya tendencia a la agrupación social es mucho más pronunciada.</p>
+            <p>Su comunicación se establece a partir de maullidos y lenguaje corporal, principalmente, aunque los machos son dados a la micción como forma de marcaje territorial, lo cual acusa un sistema comunicativo basado en los olores, semejante al canino. También son altamente sensibles al estrés, pudiendo desarrollar conductas erráticas y agresivas</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <h2>Pelaje</h2>
+            <img src="{% static 'img/gatos/gato-pelaje.jpg' %}" alt="Pelaje" width="100%">
+            <p>El pelaje del gato puede ser tan variado como su raza, pero a grandes rasgos se distinguen dos tipos de raza: las de pelo corto y las de pelo largo, ambas tenidos por mestizas. El porcentaje de gatos purasangre en el mundo no supera el 10% de los individuos totales.</p>
+            <p>Respecto a la coloración, el pelaje puede variar entre monocromo, combinaciones de colores y varios tonos de color atigrado (llamados gatos romanos). Sin embargo, la incidencia de tres o cuatro colores en un mismo gato suele favorecer a las hembras, mientras que los machos tienden a la monocromía o bicromía.</p>
+            <p>La selección artificial impuesta a raíz de su domesticación ha favorecido la proliferación de ciertos tonos, formas y colores de pelaje sobre otros. Sin embargo, estudios revelan que la mayor variación de color se produjo en la especie durante los momentos iniciales de su domesticación, antes del surgimiento de las numerosas razas existentes.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <h2>Razas</h2>
+            <img src="{% static 'img/gatos/gato-razas.jpg' %}" alt="Razas" width="100%">
+            <p>Si bien se estima que existan más de 50 razas distintas de gatos, las más conocidas pueden clasificarse en cuatro renglones, de acuerdo a su complexión y apariencia:</p>
+            <p>
+                <li><b>Pelo corto, cuerpo no muy largo y pesado.</b> Por ejemplo el Persa o el Himalayo.</li>
+                <li><b>Pelo semilargo.</b> Bastante numeroso. Como el Angora Turco o el Maine Coon.</li>
+                <li><b>Pelo corto.</b> El más común de todos, abarca 18 razas distintas, como el Europeo, el Azul Ruso o el Sphynx.</li>
+                <li><b>Tipo oriental.</b> Esbeltos y musculosos, como el Siamés.</li>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'base.html'%}
+
+{%block contenido %}
+{% load static %} 
+<!--perfil-->
+<div class="container-fluid mt-3 p-3">
+    <div class="row">
+        <!-- <div id="c_fperfil" class="col-md-4">         
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="...">
+                <label class="btn color_corp" id="foto_perfil"><input accept="image/*" type="file"/>Subir Foto</label>
+            </div>
+        </div> -->
+        <div class="col-md-7 ml-3">
+            <div class="col-md-12 mt-2">
+                <button type="button" class="btn color_corp">EDITAR PERFIL ⚙️</button>
+                <a href="{% url 'agregar_producto' %}" class="btn color_corp">SUBIR PRODUCTO</a>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header">
+                    PERFIL DE CUENTA
+                </div>
+                <form class="ml-3 mt-3 mb-3 mr-3">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="input#">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="input#">Apellido</label>
+                            <input type="text" class="form-control" placeholder="Apellidos">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th width="5%">ID</th>
+                        <th width="20%">Producto</th>
+                        <th width="20%">Marca</th>
+                        <th width="5%">Stock</th>
+                        <th width="30%">Foto</th>
+                        <th width="10%">Precio</th>
+                        <th width="10%">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for p in productos %}
+                        <tr>
+                            <td>{{p.id_producto}}</td>
+                            <td>{{p.nombre_producto}}</td>
+                            <td>{{p.marca_producto}}</td>
+                            <td>{{p.stock_producto}}</td>
+                            <td><img width="100px" src="{{p.img_producto.url}}" alt=""></td>
+                            <td>{{p.precio_producto}}</td>
+                            <td>
+                                <a href="" class="btn color_corp">Eliminar</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--perfil-->
+{%endblock%}

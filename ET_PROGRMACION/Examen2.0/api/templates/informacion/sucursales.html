@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+    <div class="col-md-12 p-3">
+        <h1 class="text-center text-uppercase">Nuestras Tiendas</h1>
+    </div>
+    <hr>
+    <div class="card col-md-12">
+        <div class="card-body">
+        <div class="row ">
+            <div class="col-md-6">
+                <h5 class="card-title">Tienda La Florida</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Froilán Roa 7107, La Florida</h6>
+                <hr>
+                <h6>Horarios de atención:</h6>
+                <p>Lunes a Viernes 08:00 a 21:00 horas</p>
+                <p>Sábado 09:00 a 20:00 horas</p>
+                <hr>
+                <h6 class="text-center p-3">¿Como llegar?</h6>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-info color_corp" data-toggle="modal" data-target="#tiendaFlorida">Ver en el mapa</button>
+                </div>  
+                
+
+            </div>
+            <div class="col-md-6 p-1">
+                <img src="{% static 'img/sucursales/sucursal1.jpg'%}" alt="" width="100%">
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <hr class="p-3">
+
+    <div class="card col-md-12">
+        <div class="card-body">
+            <div class="row ">
+            <div class="col-md-6">
+                <h5 class="card-title">Tienda Maipú</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Av. Esquina Blanca 501, Maipú</h6>
+                <hr>
+                <h6>Horarios de atención:</h6>
+                <p>Lunes a Viernes 08:30 a 22:00 horas</p>
+                <p>Sábado y Domingo 09:00 a 20:00 horas</p>
+                <hr>
+                <h6 class="text-center p-3">¿Como llegar?</h6>
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-info color_corp" data-toggle="modal" data-target="#tiendaMaipu">Ver en el mapa</button>
+                </div>  
+            </div>
+            <div class="col-md-6 p-1">
+                <img src="{% static 'img/sucursales/sucursal2.jpg'%}" alt="" width="100%">
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <hr class="p-3">
+
+<!-- Modal  Sucursal Tienda Maipú -->
+
+    <div class="modal fade" id="tiendaMaipu" tabindex="-1" aria-labelledby="tiendaMaipuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tiendaMaipuLabel">Tienda Maipú</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h5 class="card-subtitle mb-2 text-muted"> Av. Esquina Blanca 501, Maipú</h5>
+                        <hr>
+                        <h6>Horarios de atención:</h6>
+                        <li>Lunes a Viernes 08:30 a 22:00 horas</li>
+                        <li>Sábado y Domingo 09:00 a 20:00 horas</li>
+                        <hr>
+
+                        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=700&amp;height=400&amp;hl=en&amp;q=Av. Esquina Blanca 501, Maipú&amp;t=k&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>                </div>
+                </div>
+                <div class="text-center p-3">
+                    <button type="button" class="btn btn-info color_corp" data-dismiss="modal">Cerrar Información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal  Sucursal Tienda La Florida -->
+
+    <div class="modal fade" id="tiendaFlorida" tabindex="-1" aria-labelledby="tiendaFloridaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="tiendaFloridaLabel">Tienda La Florida</h5>
+                </div>
+                <div class="modal-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Froilán Roa 7107, La Florida</h6>
+                    <hr>
+                    <h6>Horarios de atención:</h6>
+                    <p>Lunes a Viernes 08:00 a 21:00 horas</p>
+                    <p>Sábado 09:00 a 20:00 horas</p>
+                    <hr>
+
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Froilán Roa 7107, La Florida&amp;t=k&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+
+                </div>
+                <div class="text-center p-3">
+                    <button type="button" class="btn btn-info color_corp" data-dismiss="modal">Cerrar Información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

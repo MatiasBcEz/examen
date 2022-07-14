@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="container-fluid p-3">
+    <h1 class="text-center text-uppercase">Perros</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <h2>Caracteristicas del perro</h2>
+            <img src="{% static 'img/perros/perro-caracteristicas.jpg' %}" alt="Caracteristicas del perro" width="100%">
+            <p>Los perros son seres sociables y viven en manada con otros perros o con humanos. Suelen vivir unos 13 o 15 años y, algunos como los de raza pequeña, llegan a los 17 años. La calidad de vida, tanto por la alimentación como por los cuidados de su salud, es un factor de influencia para la expectativa de vida.</p>
+            <P>Los perros machos suelen dejar rastros de orina cuando pasean por lugares ajenos a su hogar, para reconocer el camino a la vuelta. También lo hacen para delimitar su territorio ante otros perros.</P>
+            <p>El sentido más desarrollado que tienen los perros es el olfato, que resulta un millón de veces más sensible que el de los humanos. Pueden detectar olores apenas perceptibles o distinguir entre aromas muy similares. A través del olfato interpretan el mundo que los rodea, por ejemplo, obtienen mayor información de la comida a través del olfato antes que por el gusto.</p>
+            <p>Su gran capacidad auditiva permite que sean guardianes y buenos cazadores ya que pueden alertarse a tiempo gracias a su capacidad de captar sonidos muy leves o que provienen de distancias alejadas. Además, su retina percibe mejor el movimiento y la luz en comparación a las personas, aunque no distinguen una gran amplitud cromática.</p>
+            <p>La piel de los perros está compuesta por varias capas. La externa contiene el pelaje y la interna, que es más fina y más sensible que la piel humana, los protege y los ayuda a regular la temperatura de su cuerpo, tanto para el frío como para el calor. Cuando se sienten amenazados o quieren impresionar suelen erizar su pelaje para aparentar una contextura más grande o robusta.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <h2>Alimentación del perro</h2>
+            <img src="{% static 'img/perros/perro-alimentacion.jpg' %}" alt="Alimentación del perro" width="100%">
+            <p>Los perros son carnívoros, al igual que sus antepasados, los lobos. Tienen 42 dientes diseñados para desgarrar a sus presas. Entre los cuatro y nueve meses de vida suelen cambiar su dentadura por los dientes definitivos. Además, sus glándulas salivales segregan abundante saliva para dar comienzo al proceso de digestión en la boca.</p>
+            <p>Debido a la domesticación por parte de los humanos, también suelen comer verduras o cereales cocidos, como el arroz, y alimentos balanceados que concentran todos los nutrientes necesarios para mantener su buena salud. Dependiendo de su edad y estilo de vida, necesitan consumir entre 1300 y 3500 calorías por día.</p>
+            
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 text-justify">
+            <h2>Razas</h2>
+            <img src="{% static 'img/perros/perro-razas.jpg' %}" alt="Razas" width="100%">
+            <p>Las razas de perros reconocidas de manera formal superan los 400 tipos en todo el mundo, según la Federación Cinológica Internacional (FCI) que se encarga de controlar y fomentar el pedigrí de los perros, y reconoce los siguientes diez grupos generales:</p>
+            <p>
+                <li><b>Grupo 1.</b> Perros tipo pastor y boyeros.</li>
+                <li><b>Grupo 2.</b> Perros tipo Pinscher y Schnauzer.</li>
+                <li><b>Grupo 3.</b> Terriers.</li>
+                <li><b>Grupo 4.</b> Teckels.</li>
+                <li><b>Grupo 5.</b> Perros tipo Spitz y primitivo.</li>
+                <li><b>Grupo 6.</b> Perros tipo sabueso, de rastro y similares.</li>
+                <li><b>Grupo 7.</b> Perros de muestra (con habilidad innata para cazar).</li>
+                <li><b>Grupo 8.</b> Perros de caza en agua y levantadores.</li>
+                <li><b>Grupo 9.</b> Perros de compañía.</li>
+                <li><b>Grupo 10.</b> Perros capaces de correr a gran velocidad (lebreles).</li>
+            </p>
+            <p>Además de los perros considerados de raza existen, muchos perros que surgen de las más diversas cruzas, en especial, los callejeros. Es muy importante adoptar a los perros que no tienen hogar debido a que son seres sintientes y su vida en la calle está condicionada por la vida en sociedad de los humanos.</p>
+            <p>En un entorno natural sin la intervención de la domesticación por parte del humano, los perros vivirían en un ambiente salvaje. Pero la vida de ciudad y la domesticación del hombre ha vuelto a los perros seres muy dependientes del humano para poder vivir de manera saludable.</p>
+            <p>Es responsabilidad de las personas castrar a las mascotas, incluso a los que no son de su familia pero que viven en la calle. Existen diversas organizaciones y voluntarios alrededor del mundo, que colaboran con campañas de castración gratuitas o de bajo costo para ayudar a controlar y evitar que sigan naciendo perros en la calle.</p>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

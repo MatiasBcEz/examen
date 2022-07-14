@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+  <!--FORMULARIO DE CONTACTO GENERAL-->
+<div class="col-md-12 p-3">
+    <h1 class="text-center text-uppercase">Contacto</h1>
+</div>
+<hr>
+<div class = "justify">
+    <h6>Atención Telefónica</h6>
+    <p>Canal de Atención: +56 (9) 12399945, Lunes a Viernes, de 09:00 a 17:00 horas.</p>
+
+    <h6>Redes Sociales</h6>
+    <p>Whatsapp: +56 (9) 12399945</p>
+    <p>Facebook: Pet Tools Chile</p>
+    <p>Instagram: @pet_tools</p>
+
+    <h6>Sucursales</h6>
+    <p>Conozca <b><a style=" color: teal;" href="{% url 'sucursales' %}">Nuestras Tiendas</a></b> y encuentra la más cercana. </p> 
+</div>
+
+<hr>
+
+<div class="row justify-content-center">
+    <div class="col-md-12">
+    <div class="jumbotron color_corp">
+        <h1>Formulario de Contacto</h1>
+        <p>A continuación, dejamos un formulario para que complete con sus datos y podamos responder sus cotizaciónes, dudas y sugerencias.</p>
+        <form id="formulario-ingreso">
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <label for="contacto_nombre">Nombre</label>
+                <input type="text" name="" id="contacto_nombre" class="form-control" placeholder="Ingrese su Nombre">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+            <label for="contacto_email">Email</label>
+            <input type="text" name="" id="contacto_email" class="form-control" placeholder="ejemplos@pettools.cl">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <label for="contacto_telefono">Numero de Telefono (Opcional)</label>
+                <input type="number" name="" id="contacto_telefono" class="form-control" placeholder="(9) XXXX-XXXX">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+            <label for="">Comentario</label>
+            <textarea name="" id="comentario" rows="5" class="form-control" placeholder="Indique en que le podemos ayudar"></textarea>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+            <div id="error_contacto" class="alert alert-info">
+                error!
+            </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+            <button type="submit" class="btn btn-light btn-block">Enviar</button>
+            </div>
+            <div class="col-md-6">
+            <button type="reset" class="btn btn-outline-light btn-block">Limpiar</button>
+            </div>
+        </div>
+        </form>  
+    </div>
+    </div>
+</div>
+
+  <!--FORMULARIO DE CONTACTO GENERAL-->
+{% endblock %}
